@@ -1,0 +1,344 @@
+Metadata-Version: 2.1
+Name: pyobjc
+Version: 9.0
+Summary: Python<->ObjC Interoperability Module
+Home-page: https://github.com/ronaldoussoren/pyobjc
+Author: Ronald Oussoren
+Author-email: pyobjc-dev@lists.sourceforge.net
+License: MIT License
+Keywords: Objective-C,bridge,Cocoa
+Platform: macOS
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X :: Cocoa
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Objective C
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+Project-URL: Documentation, https://pyobjc.readthedocs.io/en/latest/
+Project-URL: Issue tracker, https://github.com/ronaldoussoren/pyobjc/issues
+Project-URL: Repository, https://github.com/ronaldoussoren/pyobjc
+Requires-Dist: pyobjc-core (==9.0)
+Requires-Dist: pyobjc-framework-AddressBook (==9.0)
+Requires-Dist: pyobjc-framework-AppleScriptKit (==9.0)
+Requires-Dist: pyobjc-framework-ApplicationServices (==9.0)
+Requires-Dist: pyobjc-framework-Automator (==9.0)
+Requires-Dist: pyobjc-framework-CFNetwork (==9.0)
+Requires-Dist: pyobjc-framework-Cocoa (==9.0)
+Requires-Dist: pyobjc-framework-CoreAudio (==9.0)
+Requires-Dist: pyobjc-framework-CoreAudioKit (==9.0)
+Requires-Dist: pyobjc-framework-CoreData (==9.0)
+Requires-Dist: pyobjc-framework-CoreMIDI (==9.0)
+Requires-Dist: pyobjc-framework-CoreServices (==9.0)
+Requires-Dist: pyobjc-framework-CoreText (==9.0)
+Requires-Dist: pyobjc-framework-DiscRecording (==9.0)
+Requires-Dist: pyobjc-framework-DiscRecordingUI (==9.0)
+Requires-Dist: pyobjc-framework-DiskArbitration (==9.0)
+Requires-Dist: pyobjc-framework-DVDPlayback (==9.0)
+Requires-Dist: pyobjc-framework-ExceptionHandling (==9.0)
+Requires-Dist: pyobjc-framework-InstallerPlugins (==9.0)
+Requires-Dist: pyobjc-framework-LatentSemanticMapping (==9.0)
+Requires-Dist: pyobjc-framework-LaunchServices (==9.0)
+Requires-Dist: pyobjc-framework-OSAKit (==9.0)
+Requires-Dist: pyobjc-framework-PreferencePanes (==9.0)
+Requires-Dist: pyobjc-framework-Quartz (==9.0)
+Requires-Dist: pyobjc-framework-ScreenSaver (==9.0)
+Requires-Dist: pyobjc-framework-Security (==9.0)
+Requires-Dist: pyobjc-framework-SecurityFoundation (==9.0)
+Requires-Dist: pyobjc-framework-SecurityInterface (==9.0)
+Requires-Dist: pyobjc-framework-SearchKit (==9.0)
+Requires-Dist: pyobjc-framework-SyncServices (==9.0)
+Requires-Dist: pyobjc-framework-SystemConfiguration (==9.0)
+Requires-Dist: pyobjc-framework-WebKit (==9.0)
+Requires-Dist: pyobjc-framework-AppleScriptObjC (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-CoreLocation (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-CoreWLAN (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-ImageCaptureCore (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-IOSurface (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-NetFS (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-OpenDirectory (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-ServiceManagement (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-iTunesLibrary (==9.0) ; platform_release >= "10.0"
+Requires-Dist: pyobjc-framework-AVFoundation (==9.0) ; platform_release >= "11.0"
+Requires-Dist: pyobjc-framework-CoreMedia (==9.0) ; platform_release >= "11.0"
+Requires-Dist: pyobjc-framework-CoreMediaIO (==9.0) ; platform_release >= "11.0"
+Requires-Dist: pyobjc-framework-IMServicePlugIn (==9.0) ; platform_release >= "11.0"
+Requires-Dist: pyobjc-framework-StoreKit (==9.0) ; platform_release >= "11.0"
+Requires-Dist: pyobjc-framework-SceneKit (==9.0) ; platform_release >= "11.0"
+Requires-Dist: pyobjc-framework-libdispatch (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-AudioVideoBridging (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-Accounts (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-EventKit (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-GameCenter (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-Social (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-GameKit (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-VideoToolbox (==9.0) ; platform_release >= "12.0"
+Requires-Dist: pyobjc-framework-AVKit (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-GameController (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-MapKit (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-MediaAccessibility (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-MediaLibrary (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-MediaToolbox (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-SpriteKit (==9.0) ; platform_release >= "13.0"
+Requires-Dist: pyobjc-framework-CloudKit (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-CoreBluetooth (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-CryptoTokenKit (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-FinderSync (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-LocalAuthentication (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-MultipeerConnectivity (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-NotificationCenter (==9.0) ; platform_release >= "14.0"
+Requires-Dist: pyobjc-framework-Contacts (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-ContactsUI (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-Metal (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-MetalKit (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-ModelIO (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-NetworkExtension (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-Photos (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-PhotosUI (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-SafariServices (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-GameplayKit (==9.0) ; platform_release >= "15.0"
+Requires-Dist: pyobjc-framework-Intents (==9.0) ; platform_release >= "16.0"
+Requires-Dist: pyobjc-framework-MediaPlayer (==9.0) ; platform_release >= "16.0"
+Requires-Dist: pyobjc-framework-ColorSync (==9.0) ; platform_release >= "17.0"
+Requires-Dist: pyobjc-framework-CoreML (==9.0) ; platform_release >= "17.0"
+Requires-Dist: pyobjc-framework-CoreSpotlight (==9.0) ; platform_release >= "17.0"
+Requires-Dist: pyobjc-framework-ExternalAccessory (==9.0) ; platform_release >= "17.0"
+Requires-Dist: pyobjc-framework-MetalPerformanceShaders (==9.0) ; platform_release >= "17.0"
+Requires-Dist: pyobjc-framework-Vision (==9.0) ; platform_release >= "17.0"
+Requires-Dist: pyobjc-framework-AdSupport (==9.0) ; platform_release >= "18.0"
+Requires-Dist: pyobjc-framework-BusinessChat (==9.0) ; platform_release >= "18.0"
+Requires-Dist: pyobjc-framework-NaturalLanguage (==9.0) ; platform_release >= "18.0"
+Requires-Dist: pyobjc-framework-Network (==9.0) ; platform_release >= "18.0"
+Requires-Dist: pyobjc-framework-UserNotifications (==9.0) ; platform_release >= "18.0"
+Requires-Dist: pyobjc-framework-VideoSubscriberAccount (==9.0) ; platform_release >= "18.0"
+Requires-Dist: pyobjc-framework-AuthenticationServices (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-AutomaticAssessmentConfiguration (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-CoreHaptics (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-CoreMotion (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-DeviceCheck (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-ExecutionPolicy (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-FileProvider (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-FileProviderUI (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-LinkPresentation (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-OSLog (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-PencilKit (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-PushKit (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-QuickLookThumbnailing (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-Speech (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-SoundAnalysis (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-SystemExtensions (==9.0) ; platform_release >= "19.0"
+Requires-Dist: pyobjc-framework-Accessibility (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-AdServices (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-AppTrackingTransparency (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-CallKit (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-ClassKit (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-KernelManagement (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-MetalPerformanceShadersGraph (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-MLCompute (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-PassKit (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-ReplayKit (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-ScreenTime (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-UniformTypeIdentifiers (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-UserNotificationsUI (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-Virtualization (==9.0) ; platform_release >= "20.0"
+Requires-Dist: pyobjc-framework-DataDetection (==9.0) ; platform_release >= "21.0"
+Requires-Dist: pyobjc-framework-IntentsUI (==9.0) ; platform_release >= "21.0"
+Requires-Dist: pyobjc-framework-LocalAuthenticationEmbeddedUI (==9.0) ; platform_release >= "21.0"
+Requires-Dist: pyobjc-framework-MailKit (==9.0) ; platform_release >= "21.0"
+Requires-Dist: pyobjc-framework-MetricKit (==9.0) ; platform_release >= "21.0"
+Requires-Dist: pyobjc-framework-ShazamKit (==9.0) ; platform_release >= "21.0"
+Requires-Dist: pyobjc-framework-ScreenCaptureKit (==9.0) ; platform_release >= "21.4"
+Requires-Dist: pyobjc-framework-AVRouting (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-BackgroundAssets (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-ExtensionKit (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-HealthKit (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-MetalFX (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-SafetyKit (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-SharedWithYouCore (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-SharedWithYou (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-ThreadNetwork (==9.0) ; platform_release >= "22.0"
+Requires-Dist: pyobjc-framework-CalendarStore (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-Collaboration (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-DictionaryServices (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-FSEvents (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-InputMethodKit (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-InstantMessage (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-ScriptingBridge (==9.0) ; platform_release >= "9.0"
+Requires-Dist: pyobjc-framework-PubSub (==9.0) ; platform_release >= "9.0" and platform_release < "18.0"
+Provides-Extra: allbindings
+Requires-Dist: pyobjc-core (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-libdispatch (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Accessibility (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AdServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AdSupport (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AppTrackingTransparency (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AudioVideoBridging (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AuthenticationServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AutomaticAssessmentConfiguration (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AVKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AVFoundation (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AVRouting (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Accounts (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AddressBook (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AppleScriptKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-AppleScriptObjC (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ApplicationServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Automator (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-BackgroundAssets (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-BusinessChat (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CFNetwork (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CalendarStore (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CallKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ClassKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CloudKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Cocoa (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Collaboration (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ColorSync (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Contacts (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ContactsUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreAudio (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreAudioKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreBluetooth (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreData (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreHaptics (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreLocation (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreMedia (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreMediaIO (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreMIDI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreML (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreMotion (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreSpotlight (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreText (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CoreWLAN (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-CryptoTokenKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DataDetection (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DeviceCheck (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DictionaryServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DiscRecording (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DiscRecordingUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DiskArbitration (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-DVDPlayback (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-EventKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ExceptionHandling (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ExecutionPolicy (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ExternalAccessory (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ExtensionKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-FileProvider (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-FileProviderUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-FSEvents (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-FinderSync (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-GameCenter (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-GameController (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-HealthKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-IMServicePlugIn (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-InputMethodKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ImageCaptureCore (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Intents (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-IntentsUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-InstallerPlugins (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-InstantMessage (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-IOSurface (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-KernelManagement (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-LatentSemanticMapping (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-LaunchServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-LinkPresentation (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-LocalAuthentication (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-LocalAuthenticationEmbeddedUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MailKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MapKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MediaAccessibility (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MediaLibrary (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MediaPlayer (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MediaToolbox (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Metal (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MetalFX (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MetalKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MetalPerformanceShaders (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MetalPerformanceShadersGraph (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MetricKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MLCompute (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ModelIO (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-MultipeerConnectivity (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-NaturalLanguage (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-NetFS (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Network (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-NetworkExtension (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-NotificationCenter (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-OpenDirectory (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-OSAKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-OSLog (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-PassKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-PencilKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Photos (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-PhotosUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-PreferencePanes (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-PubSub (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-PushKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Quartz (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-QuickLookThumbnailing (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ReplayKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SafetyKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SafariServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ScreenSaver (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ScreenTime (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ScriptingBridge (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Security (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SecurityFoundation (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SecurityInterface (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SearchKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ServiceManagement (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ShazamKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Social (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Speech (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SpriteKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-StoreKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SyncServices (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SystemConfiguration (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-WebKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-GameKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-GameplayKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SceneKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SharedWithYouCore (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SharedWithYou (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SoundAnalysis (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ScreenCaptureKit (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-SystemExtensions (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-ThreadNetwork (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-UniformTypeIdentifiers (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-UserNotifications (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-UserNotificationsUI (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-VideoSubscriberAccount (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-VideoToolbox (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Virtualization (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-Vision (==9.0) ; extra == 'allbindings'
+Requires-Dist: pyobjc-framework-iTunesLibrary (==9.0) ; extra == 'allbindings'
+
+
+PyObjC is a bridge between Python and Objective-C.  It allows full
+featured Cocoa applications to be written in pure Python.  It is also
+easy to use other frameworks containing Objective-C class libraries
+from Python and to mix in Objective-C, C and C++ source.
+
+This package is a pseudo-package that will install all pyobjc related
+packages (that is, pyobjc-core as well as wrappers for frameworks on
+macOS)
+
+Project links
+-------------
+
+* `Documentation <https://pyobjc.readthedocs.io/en/latest/>`_
+* `Issue Tracker <https://github.com/ronaldoussoren/pyobjc/issues>`_
+* `Repository <https://github.com/ronaldoussoren/pyobjc/>`_
