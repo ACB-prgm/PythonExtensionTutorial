@@ -1,0 +1,5 @@
+# Python Extension Tutorial
+
+This repository corresponds to this [youtube video](https://youtu.be/z2MHuWEDUNw).  In this video, we'll explore how you can use Python to enhance the Godot game engine. Godot is a powerful game engine that allows you to create games in 2D and 3D, but sometimes it can be limited in its capabilities. That's where Python comes in! By leveraging Python in Godot, you can extend the functionality of the engine and create more complex games with ease.
+
+We'll start with an overview of how Python works in Godot and how to set up the environment. Then we'll dive into practical examples of how you can use Python to do things that you can't do with Godot alone. This repo contains a simple working project example shown in the video. it also contains the more complex example in the [ComplexExampleFiles](https://github.com/ACB-prgm/PythonExtensionTutorial/tree/main/ProjectFiles/ComplexExampleFiles) directory. This example is not set up to work with this project, but is included so you can see the details of how I managed real-time python to godot communication.
